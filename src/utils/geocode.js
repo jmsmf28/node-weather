@@ -7,10 +7,10 @@ const geocode = (adress = {}, callback) => {
         if(error){
             callback('Unbale to connect to weather service', undefined)
             //res.status(500).json({ message: 'Unbale to connect to weather service'})
-        } else if(res.body.features.length === 0){
+        /* } else if(res.body.features.length === 0){
             callback('Unbale to find location', undefined)
         } else if(res.body.features.length > 1){
-            callback('Please specify the country', undefined)
+            callback('Please specify the country', undefined) */
         } else {
             callback(undefined, {
                 longitude : res.body.features[0].center[0],
