@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) =>{
         country: location[1]
     }
 
-    fetch(`http://localhost:8000/weather/?city=${location[0]}&country=${location[1]}`)
+    fetch(`/weather/?city=${location[0]}&country=${location[1]}`)
         .then((res) => {
             res.json().then((data) => {
                 if (data.error) {
