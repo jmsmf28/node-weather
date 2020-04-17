@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express')
-//require('dotenv').config()
+require('dotenv').config()
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')

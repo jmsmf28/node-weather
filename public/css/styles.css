@@ -85,8 +85,7 @@ h1 {
 }
 
 p {
-    padding-top: 16px;
-    
+    padding: 16px 0;   
 }
 
 .portrait {
@@ -118,3 +117,4 @@ p {
 .button:hover{
     filter: brightness(90%);
 }
+
